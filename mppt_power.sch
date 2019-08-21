@@ -1097,35 +1097,13 @@ Wire Wire Line
 	7550 5400 7450 5400
 $Comp
 L Isolator:SFH617A-2X019T U?
-U 1 1 5D920DD0
-P 6950 2600
-F 0 "U?" H 6950 2925 50  0000 C CNN
-F 1 "SFH617A-2X019T" H 6950 2834 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W7.62mm" H 6950 2300 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 6600 2900 50  0001 C CNN
-	1    6950 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:SFH617A-2X019T U?
-U 1 1 5D921C12
-P 6950 3050
-F 0 "U?" H 6950 3375 50  0000 C CNN
-F 1 "SFH617A-2X019T" H 6950 3284 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W7.62mm" H 6950 2750 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 6600 3350 50  0001 C CNN
-	1    6950 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:SFH617A-2X019T U?
 U 1 1 5D9224BB
-P 8750 3300
-F 0 "U?" H 8750 3625 50  0000 C CNN
-F 1 "SFH617A-2X019T" H 8750 3534 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W7.62mm" H 8750 3000 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 8400 3600 50  0001 C CNN
-	1    8750 3300
+P 7950 2950
+F 0 "U?" H 7950 3275 50  0000 C CNN
+F 1 "SFH617A-2X019T" H 7950 3184 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-4_W7.62mm" H 7950 2650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 7600 3250 50  0001 C CNN
+	1    7950 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1233,4 +1211,70 @@ Wire Wire Line
 Wire Wire Line
 	4550 2200 4550 2400
 Connection ~ 4550 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5D65C100
+P 8350 3150
+F 0 "#PWR?" H 8350 2900 50  0001 C CNN
+F 1 "GND" H 8355 2977 50  0000 C CNN
+F 2 "" H 8350 3150 50  0001 C CNN
+F 3 "" H 8350 3150 50  0001 C CNN
+	1    8350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3050 8350 3050
+Wire Wire Line
+	8350 3050 8350 3150
+$Comp
+L Device:R R?
+U 1 1 5D662C62
+P 7350 2850
+F 0 "R?" V 7143 2850 50  0000 C CNN
+F 1 "470" V 7234 2850 50  0000 C CNN
+F 2 "" V 7280 2850 50  0001 C CNN
+F 3 "~" H 7350 2850 50  0001 C CNN
+F 4 "PMR18EZPJU7L0" V 7350 2850 50  0001 C CNN "Recommended"
+	1    7350 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 2850 7500 2850
+Wire Wire Line
+	7650 3050 7050 3050
+Text Notes 7350 1850 1    50   ~ 0
+sense low power
+Text Notes 8200 2250 0    50   ~ 0
+sense output no load
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D681563
+P 6600 2900
+F 0 "J?" H 6708 3081 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6708 2990 50  0000 C CNN
+F 2 "" H 6600 2900 50  0001 C CNN
+F 3 "~" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3000 7050 3000
+Wire Wire Line
+	7050 3000 7050 3050
+Wire Wire Line
+	7200 2850 7050 2850
+Wire Wire Line
+	7050 2850 7050 2900
+Wire Wire Line
+	7050 2900 6800 2900
+Text Notes 6850 3200 0    50   ~ 0
+external force disable
+Wire Wire Line
+	8250 2850 8350 2850
+Wire Wire Line
+	8350 2850 8350 2400
+Wire Wire Line
+	8350 2400 7850 2400
+Wire Wire Line
+	7850 2400 7850 1700
 $EndSCHEMATC

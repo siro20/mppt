@@ -144,7 +144,7 @@ L Device:R R?
 U 1 1 5D834B32
 P 4550 2800
 F 0 "R?" H 4480 2754 50  0000 R CNN
-F 1 "R" H 4480 2845 50  0000 R CNN
+F 1 "33" H 4480 2845 50  0000 R CNN
 F 2 "" V 4480 2800 50  0001 C CNN
 F 3 "~" H 4550 2800 50  0001 C CNN
 	1    4550 2800
@@ -155,7 +155,7 @@ L Device:C_Small C?
 U 1 1 5D834B38
 P 4100 2900
 F 0 "C?" H 4192 2946 50  0000 L CNN
-F 1 "C_Small" H 4192 2855 50  0000 L CNN
+F 1 "100p" H 4192 2855 50  0000 L CNN
 F 2 "" H 4100 2900 50  0001 C CNN
 F 3 "~" H 4100 2900 50  0001 C CNN
 	1    4100 2900
@@ -623,60 +623,60 @@ Wire Wire Line
 	3150 2200 3250 2200
 Wire Wire Line
 	2350 2600 2200 2600
-Text GLabel 2200 2600 0    50   Input ~ 0
+Text GLabel 2250 2600 0    50   Input ~ 0
 FB
 $Comp
 L Device:R R?
 U 1 1 5D834C6E
-P 2050 2400
+P 1950 2400
 AR Path="/5D834C6E" Ref="R?"  Part="1" 
 AR Path="/5D82C26D/5D834C6E" Ref="R?"  Part="1" 
-F 0 "R?" H 1980 2354 50  0000 R CNN
-F 1 "24k5" H 1980 2445 50  0000 R CNN
-F 2 "" V 1980 2400 50  0001 C CNN
-F 3 "~" H 2050 2400 50  0001 C CNN
-	1    2050 2400
+F 0 "R?" H 1880 2354 50  0000 R CNN
+F 1 "24k5" H 1880 2445 50  0000 R CNN
+F 2 "" V 1880 2400 50  0001 C CNN
+F 3 "~" H 1950 2400 50  0001 C CNN
+	1    1950 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D834C74
-P 1550 3200
+P 1350 3200
 AR Path="/5D834C74" Ref="#PWR?"  Part="1" 
 AR Path="/5D82C26D/5D834C74" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1550 2950 50  0001 C CNN
-F 1 "GND" H 1555 3027 50  0000 C CNN
-F 2 "" H 1550 3200 50  0001 C CNN
-F 3 "" H 1550 3200 50  0001 C CNN
-	1    1550 3200
+F 0 "#PWR?" H 1350 2950 50  0001 C CNN
+F 1 "GND" H 1355 3027 50  0000 C CNN
+F 2 "" H 1350 3200 50  0001 C CNN
+F 3 "" H 1350 3200 50  0001 C CNN
+	1    1350 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2400 2200 2400
+	2350 2400 2100 2400
 Wire Wire Line
-	1900 2400 1550 2400
+	1800 2400 1350 2400
 Wire Wire Line
-	1550 2400 1550 3200
+	1350 2400 1350 2800
 $Comp
 L Device:R R?
 U 1 1 5D834C7D
-P 2050 2100
+P 1950 2100
 AR Path="/5D834C7D" Ref="R?"  Part="1" 
 AR Path="/5D82C26D/5D834C7D" Ref="R?"  Part="1" 
-F 0 "R?" H 1980 2054 50  0000 R CNN
-F 1 "166k" H 1980 2145 50  0000 R CNN
-F 2 "" V 1980 2100 50  0001 C CNN
-F 3 "~" H 2050 2100 50  0001 C CNN
-	1    2050 2100
+F 0 "R?" H 1880 2054 50  0000 R CNN
+F 1 "166k" H 1880 2145 50  0000 R CNN
+F 2 "" V 1880 2100 50  0001 C CNN
+F 3 "~" H 1950 2100 50  0001 C CNN
+	1    1950 2100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2350 2100 2200 2100
+	2350 2100 2100 2100
 Wire Wire Line
-	1900 2100 1550 2100
+	1800 2100 1350 2100
 Wire Wire Line
-	1550 2100 1550 2400
-Connection ~ 1550 2400
+	1350 2100 1350 2200
+Connection ~ 1350 2400
 Wire Wire Line
 	10000 1600 10450 1600
 Connection ~ 10000 1600
@@ -727,7 +727,7 @@ L MAX:MAX5069 U?
 U 1 1 5D87266E
 P 2750 2800
 F 0 "U?" H 2750 3855 50  0000 C CNN
-F 1 "MAX5069" H 2750 3764 50  0000 C CNN
+F 1 "MAX5069D" H 2750 3764 50  0000 C CNN
 F 2 "" H 2650 3100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX5069.pdf" H 2750 3673 50  0000 C CNN
 	1    2750 2800
@@ -766,7 +766,7 @@ Wire Wire Line
 Connection ~ 3350 2300
 Text GLabel 3450 1750 2    50   Input ~ 0
 VCC
-Text Notes 1050 2700 0    50   ~ 0
+Text Notes 7900 3100 0    50   ~ 0
 FB = 1.23V
 $Comp
 L Device:R R?
@@ -1016,6 +1016,214 @@ Wire Wire Line
 	7500 4400 7850 4400
 Wire Wire Line
 	7850 4400 7850 4500
-Text HLabel 1600 1600 0    50   Input ~ 0
+Text Notes 600  2150 0    50   ~ 0
+fosc = 600Khz
+Text Notes 600  2450 0    50   ~ 0
+50ns deadtime
+Wire Wire Line
+	2350 2200 1350 2200
+Connection ~ 1350 2200
+Wire Wire Line
+	1350 2200 1350 2300
+$Comp
+L Device:C_Small C?
+U 1 1 5D6C3685
+P 1950 2800
+F 0 "C?" H 2042 2846 50  0000 L CNN
+F 1 "100n" H 2042 2755 50  0000 L CNN
+F 2 "" H 1950 2800 50  0001 C CNN
+F 3 "~" H 1950 2800 50  0001 C CNN
+	1    1950 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2800 2050 2800
+Wire Wire Line
+	1850 2800 1350 2800
+Connection ~ 1350 2800
+Wire Wire Line
+	1350 2800 1350 3150
+Text Notes 2100 3000 0    50   ~ 0
+fault integration time 4.7ms
+$Comp
+L Device:R R?
+U 1 1 5D6D4E6E
+P 700 2900
+AR Path="/5D6D4E6E" Ref="R?"  Part="1" 
+AR Path="/5D82C26D/5D6D4E6E" Ref="R?"  Part="1" 
+F 0 "R?" H 630 2854 50  0000 R CNN
+F 1 "?" H 630 2945 50  0000 R CNN
+F 2 "" V 630 2900 50  0001 C CNN
+F 3 "~" H 700 2900 50  0001 C CNN
+	1    700  2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2700 950  2700
+Wire Wire Line
+	700  2700 700  2750
+$Comp
+L Device:C_Small C?
+U 1 1 5D6E0AAF
+P 950 2900
+F 0 "C?" H 1042 2946 50  0000 L CNN
+F 1 "?" H 1042 2855 50  0000 L CNN
+F 2 "" H 950 2900 50  0001 C CNN
+F 3 "~" H 950 2900 50  0001 C CNN
+	1    950  2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2800 950  2700
+Connection ~ 950  2700
+Wire Wire Line
+	950  2700 700  2700
+Wire Wire Line
+	950  3150 1350 3150
+Connection ~ 1350 3150
+Wire Wire Line
+	1350 3150 1350 3200
+Wire Wire Line
+	950  3000 950  3150
+Wire Wire Line
+	950  3150 700  3150
+Wire Wire Line
+	700  3150 700  3050
+Connection ~ 950  3150
+$Comp
+L Device:C_Small C?
+U 1 1 5D6F80BA
+P 1600 2300
+F 0 "C?" H 1692 2346 50  0000 L CNN
+F 1 "?" H 1692 2255 50  0000 L CNN
+F 2 "" H 1600 2300 50  0001 C CNN
+F 3 "~" H 1600 2300 50  0001 C CNN
+	1    1600 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2300 1700 2300
+Wire Wire Line
+	1500 2300 1350 2300
+Connection ~ 1350 2300
+Wire Wire Line
+	1350 2300 1350 2400
+Text Notes 3400 3100 0    50   ~ 0
+5Mhz cutoff
+$Comp
+L Device:R R?
+U 1 1 5D783445
+P 1950 4000
+AR Path="/5D783445" Ref="R?"  Part="1" 
+AR Path="/5D82C26D/5D783445" Ref="R?"  Part="1" 
+F 0 "R?" H 1880 3954 50  0000 R CNN
+F 1 "20k" H 1880 4045 50  0000 R CNN
+F 2 "" V 1880 4000 50  0001 C CNN
+F 3 "~" H 1950 4000 50  0001 C CNN
+	1    1950 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D784593
+P 1950 3500
+AR Path="/5D784593" Ref="R?"  Part="1" 
+AR Path="/5D82C26D/5D784593" Ref="R?"  Part="1" 
+F 0 "R?" H 1880 3454 50  0000 R CNN
+F 1 "158k" H 1880 3545 50  0000 R CNN
+F 2 "" V 1880 3500 50  0001 C CNN
+F 3 "~" H 1950 3500 50  0001 C CNN
+	1    1950 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D78952A
+P 3250 1400
+F 0 "#PWR?" H 3250 1250 50  0001 C CNN
+F 1 "+12V" H 3265 1573 50  0000 C CNN
+F 2 "" H 3250 1400 50  0001 C CNN
+F 3 "" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1500 3250 1400
+Connection ~ 3250 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5D7DE694
+P 1950 4300
+AR Path="/5D7DE694" Ref="#PWR?"  Part="1" 
+AR Path="/5D82C26D/5D7DE694" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1950 4050 50  0001 C CNN
+F 1 "GND" H 1955 4127 50  0000 C CNN
+F 2 "" H 1950 4300 50  0001 C CNN
+F 3 "" H 1950 4300 50  0001 C CNN
+	1    1950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D7DED50
+P 1950 3300
+F 0 "#PWR?" H 1950 3150 50  0001 C CNN
+F 1 "+12V" H 1965 3473 50  0000 C CNN
+F 2 "" H 1950 3300 50  0001 C CNN
+F 3 "" H 1950 3300 50  0001 C CNN
+	1    1950 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 950  4000 0    50   Input ~ 0
 SHUTDOWN
+Wire Wire Line
+	1950 3650 1950 3800
+Wire Wire Line
+	1950 4150 1950 4300
+Wire Wire Line
+	1950 3350 1950 3300
+Connection ~ 1950 3800
+Wire Wire Line
+	1950 3800 1950 3850
+Wire Wire Line
+	1650 2500 2350 2500
+Text Notes 2200 3750 0    50   ~ 0
+Vstart = 11V
+Text Notes 2200 3850 0    50   ~ 0
+pull low to disable MAX5069D
+$Comp
+L Transistor_FET:IRF6668 Q?
+U 1 1 5D806623
+P 1250 4000
+F 0 "Q?" H 1456 4046 50  0000 L CNN
+F 1 "BSS123" H 1456 3955 50  0000 L CNN
+F 2 "Package_DirectFET:DirectFET_MN" H 1250 4000 50  0001 C CIN
+F 3 "https://www.mouser.de/datasheet/2/196/Infineon-IPP042N03L-DS-v02_00-en-522853.pdf" H 1250 4000 50  0001 L CNN
+	1    1250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8224A6
+P 1350 4250
+AR Path="/5D8224A6" Ref="#PWR?"  Part="1" 
+AR Path="/5D82C26D/5D8224A6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 4000 50  0001 C CNN
+F 1 "GND" H 1355 4077 50  0000 C CNN
+F 2 "" H 1350 4250 50  0001 C CNN
+F 3 "" H 1350 4250 50  0001 C CNN
+	1    1350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3800 1650 3800
+Wire Wire Line
+	1350 4250 1350 4200
+Wire Wire Line
+	1050 4000 950  4000
+Wire Wire Line
+	1650 2500 1650 3800
+Connection ~ 1650 3800
+Wire Wire Line
+	1650 3800 1350 3800
 $EndSCHEMATC
