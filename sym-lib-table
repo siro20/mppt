@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name MAX)(type Legacy)(uri ${KIPRJMOD}/MAX.lib)(options "")(descr ""))
+  (lib (name SparkFunPowerIC)(type Legacy)(uri /home/siro/SparkFun-KiCad-Libraries/Libraries/SparkFun-IC-Power.lib)(options "")(descr ""))
+  (lib (name SparkFunConnectors)(type Legacy)(uri /home/siro/SparkFun-KiCad-Libraries/Libraries/SparkFun-Connectors.lib)(options "")(descr ""))
+  (lib (name SparkFunPowerSym)(type Legacy)(uri /home/siro/SparkFun-KiCad-Libraries/Libraries/SparkFun-PowerSymbols.lib)(options "")(descr ""))
+  (lib (name TI)(type Legacy)(uri ${KIPRJMOD}/TI.lib)(options "")(descr ""))
+  (lib (name LT)(type Legacy)(uri ${KIPRJMOD}/LT.lib)(options "")(descr ""))
+  (lib (name MICROCHIP)(type Legacy)(uri ${KIPRJMOD}/MICROCHIP.lib)(options "")(descr ""))
+)

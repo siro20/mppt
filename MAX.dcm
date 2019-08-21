@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX11647
+D Low-Power, 1-/2-Channel, I2C, 10-Bit ADCs in Ultra-Tiny 1.9mm x 2.2mm Package
+F https://www.mouser.de/datasheet/2/256/MAX11646-MAX11647-1513342.pdf
+$ENDCMP
+#
+$CMP MAX5069
+D High-Frequency, Current-Mode PWM Controllerwith Accurate Oscillator and Dual FET Drivers
+F https://datasheets.maximintegrated.com/en/ds/MAX5069.pdf
+$ENDCMP
+#
+$CMP MAX9611
+D High-Side, Current-Sense Amplifiers with 12-Bit ADC and Op Amp/Comparator
+K ADC Op Amp/Comparator
+F https://datasheets.maximintegrated.com/en/ds/MAX9611-MAX9612.pdf
+$ENDCMP
+#
+#End Doc Library

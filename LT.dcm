@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3803-5
+D Constant FrequencyCurrent Mode Flyback DC/DC Controller in ThinSOT
+F https://www.analog.com/media/en/technical-documentation/data-sheets/38035fc.pdf
+$ENDCMP
+#
+#End Doc Library
