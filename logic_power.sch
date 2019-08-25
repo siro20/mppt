@@ -41,19 +41,6 @@ F 3 "" H 2350 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5DABC5F7
-P 4550 2950
-AR Path="/5DABC5F7" Ref="R?"  Part="1" 
-AR Path="/5DAB7E1F/5DABC5F7" Ref="R?"  Part="1" 
-F 0 "R?" V 4343 2950 50  0000 C CNN
-F 1 "130" V 4434 2950 50  0000 C CNN
-F 2 "" V 4480 2950 50  0001 C CNN
-F 3 "~" H 4550 2950 50  0001 C CNN
-	1    4550 2950
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5DABC5FD
 P 5000 3400
@@ -110,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 3300 2350 3950
 Wire Wire Line
-	3650 3300 4550 3300
+	3650 3300 4300 3300
 Wire Wire Line
 	4550 3300 5000 3300
 Connection ~ 4550 3300
@@ -118,47 +105,32 @@ Wire Wire Line
 	4550 3600 4550 3500
 Wire Wire Line
 	5000 3600 5000 3500
-Wire Wire Line
-	4550 3100 4550 3300
 Text Notes 3050 3800 0    50   ~ 0
 8.1V shunt on Vcc
 $Comp
-L Device:Transformer_1P_2S T?
-U 1 1 5DABC621
-P 6650 3400
-AR Path="/5DABC621" Ref="T?"  Part="1" 
-AR Path="/5DAB7E1F/5DABC621" Ref="T?"  Part="1" 
-F 0 "T?" H 6650 3981 50  0000 C CNN
-F 1 "PA1528" H 6650 3890 50  0000 C CNN
-F 2 "" H 6650 3400 50  0001 C CNN
-F 3 "~" H 6650 3400 50  0001 C CNN
-	1    6650 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5DABC627
-P 6100 3950
+P 6700 2150
 AR Path="/5DABC627" Ref="R?"  Part="1" 
 AR Path="/5DAB7E1F/5DABC627" Ref="R?"  Part="1" 
-F 0 "R?" V 5893 3950 50  0000 C CNN
-F 1 "68" V 5984 3950 50  0000 C CNN
-F 2 "" V 6030 3950 50  0001 C CNN
-F 3 "~" H 6100 3950 50  0001 C CNN
-	1    6100 3950
+F 0 "R?" V 6493 2150 50  0000 C CNN
+F 1 "300k" V 6584 2150 50  0000 C CNN
+F 2 "" V 6630 2150 50  0001 C CNN
+F 3 "~" H 6700 2150 50  0001 C CNN
+	1    6700 2150
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5DABC62D
-P 6100 4350
+P 6300 2200
 AR Path="/5DABC62D" Ref="C?"  Part="1" 
 AR Path="/5DAB7E1F/5DABC62D" Ref="C?"  Part="1" 
-F 0 "C?" H 6192 4396 50  0000 L CNN
-F 1 "100p" H 6192 4305 50  0000 L CNN
-F 2 "" H 6100 4350 50  0001 C CNN
-F 3 "~" H 6100 4350 50  0001 C CNN
-	1    6100 4350
+F 0 "C?" H 6392 2246 50  0000 L CNN
+F 1 "360p" H 6392 2155 50  0000 L CNN
+F 2 "" H 6300 2200 50  0001 C CNN
+F 3 "~" H 6300 2200 50  0001 C CNN
+	1    6300 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -189,19 +161,6 @@ F 3 "~" H 5600 4350 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5DABC63F
-P 6100 4600
-AR Path="/5DABC63F" Ref="#PWR?"  Part="1" 
-AR Path="/5DAB7E1F/5DABC63F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6100 4350 50  0001 C CNN
-F 1 "GND" H 6105 4427 50  0000 C CNN
-F 2 "" H 6100 4600 50  0001 C CNN
-F 3 "" H 6100 4600 50  0001 C CNN
-	1    6100 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 5DABC645
 P 5600 4600
 AR Path="/5DABC645" Ref="#PWR?"  Part="1" 
@@ -227,18 +186,9 @@ F 3 "https://www.mouser.de/datasheet/2/427/sihll110-1504798.pdf" H 5500 3900 50 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3600 6100 3600
-Wire Wire Line
 	5600 3600 5600 3700
 Wire Wire Line
-	6100 3800 6100 3600
-Connection ~ 6100 3600
-Wire Wire Line
 	6100 3600 5600 3600
-Wire Wire Line
-	6100 4250 6100 4100
-Wire Wire Line
-	6100 4600 6100 4450
 Wire Wire Line
 	5600 4600 5600 4500
 Wire Wire Line
@@ -263,53 +213,40 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5DABC663
-P 7100 4000
+P 7100 4150
 AR Path="/5DABC663" Ref="#PWR?"  Part="1" 
 AR Path="/5DAB7E1F/5DABC663" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7100 3750 50  0001 C CNN
-F 1 "GND" H 7105 3827 50  0000 C CNN
-F 2 "" H 7100 4000 50  0001 C CNN
-F 3 "" H 7100 4000 50  0001 C CNN
-	1    7100 4000
+F 0 "#PWR?" H 7100 3900 50  0001 C CNN
+F 1 "GND" H 7105 3977 50  0000 C CNN
+F 2 "" H 7100 4150 50  0001 C CNN
+F 3 "" H 7100 4150 50  0001 C CNN
+	1    7100 4150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 5DABC669
-P 7300 3500
-AR Path="/5DABC669" Ref="D?"  Part="1" 
-AR Path="/5DAB7E1F/5DABC669" Ref="D?"  Part="1" 
-F 0 "D?" H 7300 3284 50  0000 C CNN
-F 1 "D_Schottky" H 7300 3375 50  0000 C CNN
-F 2 "" H 7300 3500 50  0001 C CNN
-F 3 "~" H 7300 3500 50  0001 C CNN
-	1    7300 3500
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5DABC66F
-P 7600 3600
+P 7600 3750
 AR Path="/5DABC66F" Ref="C?"  Part="1" 
 AR Path="/5DAB7E1F/5DABC66F" Ref="C?"  Part="1" 
-F 0 "C?" H 7692 3646 50  0000 L CNN
-F 1 "10u" H 7692 3555 50  0000 L CNN
-F 2 "" H 7600 3600 50  0001 C CNN
-F 3 "~" H 7600 3600 50  0001 C CNN
-	1    7600 3600
+F 0 "C?" H 7692 3796 50  0000 L CNN
+F 1 "10u" H 7692 3705 50  0000 L CNN
+F 2 "" H 7600 3750 50  0001 C CNN
+F 3 "~" H 7600 3750 50  0001 C CNN
+	1    7600 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5DABC675
-P 7950 3600
+P 7950 3750
 AR Path="/5DABC675" Ref="C?"  Part="1" 
 AR Path="/5DAB7E1F/5DABC675" Ref="C?"  Part="1" 
-F 0 "C?" H 8042 3646 50  0000 L CNN
-F 1 "10u" H 8042 3555 50  0000 L CNN
-F 2 "" H 7950 3600 50  0001 C CNN
-F 3 "~" H 7950 3600 50  0001 C CNN
-	1    7950 3600
+F 0 "C?" H 8042 3796 50  0000 L CNN
+F 1 "10u" H 8042 3705 50  0000 L CNN
+F 2 "" H 7950 3750 50  0001 C CNN
+F 3 "~" H 7950 3750 50  0001 C CNN
+	1    7950 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -325,8 +262,6 @@ F 3 "~" H 5850 2950 50  0001 C CNN
 	1    5850 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 3200 6100 3200
 Wire Wire Line
 	6100 3200 6100 1850
 $Comp
@@ -350,41 +285,37 @@ Connection ~ 5850 1850
 Wire Wire Line
 	5850 1850 6100 1850
 Wire Wire Line
-	7950 3500 7600 3500
+	7950 3650 7600 3650
 Wire Wire Line
-	7450 3500 7600 3500
-Connection ~ 7600 3500
+	7400 3650 7600 3650
+Connection ~ 7600 3650
 Wire Wire Line
-	7050 3500 7150 3500
+	7100 4050 7100 4150
 Wire Wire Line
-	7050 3800 7100 3800
+	7600 3850 7600 4050
 Wire Wire Line
-	7100 3800 7100 4000
+	7600 4050 7100 4050
+Connection ~ 7100 4050
 Wire Wire Line
-	7600 3700 7600 3800
+	7950 3850 7950 4050
 Wire Wire Line
-	7600 3800 7100 3800
-Connection ~ 7100 3800
-Wire Wire Line
-	7950 3700 7950 3800
-Wire Wire Line
-	7950 3800 7600 3800
-Connection ~ 7600 3800
+	7950 4050 7600 4050
+Connection ~ 7600 4050
 Wire Wire Line
 	5000 3100 5000 3300
 Connection ~ 5000 3300
 Wire Wire Line
-	7950 3500 8200 3500
-Connection ~ 7950 3500
+	7950 3650 8200 3650
+Connection ~ 7950 3650
 Text GLabel 5000 2100 1    50   Input ~ 0
 12V
 Wire Wire Line
-	7650 3350 7600 3350
-Text HLabel 8200 3500 2    50   Input ~ 0
+	7650 3450 7600 3450
+Text HLabel 8200 3650 2    50   Input ~ 0
 12V+
-Text HLabel 8200 2600 2    50   Input ~ 0
+Text HLabel 8600 2600 2    50   Input ~ 0
 12V+_isolated
-Text HLabel 8200 2950 2    50   Input ~ 0
+Text HLabel 8550 2950 2    50   Input ~ 0
 12V-_isolated
 $Comp
 L Device:D_Schottky D?
@@ -393,45 +324,16 @@ P 7500 2600
 AR Path="/5DB051BC" Ref="D?"  Part="1" 
 AR Path="/5DAB7E1F/5DB051BC" Ref="D?"  Part="1" 
 F 0 "D?" H 7500 2384 50  0000 C CNN
-F 1 "D_Schottky" H 7500 2475 50  0000 C CNN
-F 2 "" H 7500 2600 50  0001 C CNN
+F 1 "BAT54T1G" H 7500 2475 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7500 2600 50  0001 C CNN
 F 3 "~" H 7500 2600 50  0001 C CNN
 	1    7500 2600
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5DB097BB
-P 8000 2700
-AR Path="/5DB097BB" Ref="C?"  Part="1" 
-AR Path="/5DAB7E1F/5DB097BB" Ref="C?"  Part="1" 
-F 0 "C?" H 8092 2746 50  0000 L CNN
-F 1 "2u2" H 8092 2655 50  0000 L CNN
-F 2 "" H 8000 2700 50  0001 C CNN
-F 3 "~" H 8000 2700 50  0001 C CNN
-	1    8000 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8200 2600 8000 2600
-Wire Wire Line
-	8200 2950 8000 2950
-Wire Wire Line
-	8000 2950 8000 2800
-Connection ~ 8000 2600
-Wire Wire Line
-	7050 3000 7200 3000
-Wire Wire Line
-	7200 3000 7200 2600
-Wire Wire Line
-	7200 2600 7350 2600
-Wire Wire Line
-	7050 3300 7450 3300
-Wire Wire Line
-	7450 3300 7450 2950
+	6950 2600 7350 2600
 Wire Wire Line
 	7450 2950 7750 2950
-Connection ~ 8000 2950
 $Comp
 L Device:R R?
 U 1 1 5DB0DE4A
@@ -450,20 +352,13 @@ Wire Wire Line
 	7650 2600 7750 2600
 Wire Wire Line
 	7750 2650 7750 2600
-Wire Wire Line
-	7750 2950 8000 2950
 Connection ~ 7750 2600
-Wire Wire Line
-	7750 2600 8000 2600
 Text HLabel 4600 1650 0    50   Input ~ 0
 V_IN
-Wire Wire Line
-	4550 1850 4800 1850
 Wire Wire Line
 	4600 1650 4800 1650
 Wire Wire Line
 	4800 1650 4800 1850
-Connection ~ 4800 1850
 Wire Wire Line
 	4800 1850 5850 1850
 $Comp
@@ -563,81 +458,13 @@ Wire Wire Line
 	2050 3200 2050 3300
 Wire Wire Line
 	2050 3500 2050 3950
-Text HLabel 8200 3800 2    50   Input ~ 0
+Text HLabel 8200 4050 2    50   Input ~ 0
 12V-
 Wire Wire Line
-	8200 3800 7950 3800
-Connection ~ 7950 3800
+	8200 4050 7950 4050
+Connection ~ 7950 4050
 Text Notes 3050 3700 0    50   ~ 0
 constant 200Khz
-$Comp
-L Device:D_Zener_Small D?
-U 1 1 5D5C2120
-P 3450 2400
-F 0 "D?" V 3404 2468 50  0000 L CNN
-F 1 "6V8" V 3495 2468 50  0000 L CNN
-F 2 "" V 3450 2400 50  0001 C CNN
-F 3 "~" V 3450 2400 50  0001 C CNN
-	1    3450 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 5D5C2A60
-P 4450 2200
-F 0 "Q?" H 4640 2246 50  0000 L CNN
-F 1 "MMBTA42" H 4640 2155 50  0000 L CNN
-F 2 "" H 4650 2300 50  0001 C CNN
-F 3 "~" H 4450 2200 50  0001 C CNN
-	1    4450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D5CC661
-P 3450 2600
-AR Path="/5D5CC661" Ref="#PWR?"  Part="1" 
-AR Path="/5DAB7E1F/5D5CC661" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3450 2350 50  0001 C CNN
-F 1 "GND" H 3455 2427 50  0000 C CNN
-F 2 "" H 3450 2600 50  0001 C CNN
-F 3 "" H 3450 2600 50  0001 C CNN
-	1    3450 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D5CCB61
-P 3450 2050
-AR Path="/5D5CCB61" Ref="R?"  Part="1" 
-AR Path="/5DAB7E1F/5D5CCB61" Ref="R?"  Part="1" 
-F 0 "R?" V 3243 2050 50  0000 C CNN
-F 1 "220k" V 3334 2050 50  0000 C CNN
-F 2 "" V 3380 2050 50  0001 C CNN
-F 3 "~" H 3450 2050 50  0001 C CNN
-	1    3450 2050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4550 2000 4550 1850
-Wire Wire Line
-	4550 2400 4550 2800
-Wire Wire Line
-	4250 2200 3450 2200
-Wire Wire Line
-	3450 2300 3450 2200
-Connection ~ 3450 2200
-Wire Wire Line
-	3450 2600 3450 2500
-Wire Wire Line
-	4550 1850 3450 1850
-Wire Wire Line
-	3450 1850 3450 1900
-Connection ~ 4550 1850
-Text HLabel 5300 3300 2    50   Input ~ 0
-V_BACKUP
-Wire Wire Line
-	5300 3300 5000 3300
 $Comp
 L Device:Q_NPN_BCE Q?
 U 1 1 5D68ADFE
@@ -684,8 +511,8 @@ L Device:D_Zener_Small D?
 U 1 1 5D6A0B5F
 P 5400 2700
 F 0 "D?" V 5354 2768 50  0000 L CNN
-F 1 "8V1" V 5445 2768 50  0000 L CNN
-F 2 "" V 5400 2700 50  0001 C CNN
+F 1 "BZT52B8V2" V 5445 2768 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 5400 2700 50  0001 C CNN
 F 3 "~" V 5400 2700 50  0001 C CNN
 	1    5400 2700
 	0    1    1    0   
@@ -718,7 +545,173 @@ Connection ~ 5000 2150
 Wire Wire Line
 	5000 2150 5000 2350
 Wire Wire Line
-	7600 3350 7600 3500
-Text GLabel 7650 3350 2    50   Input ~ 0
+	7600 3450 7600 3650
+Text GLabel 7650 3450 2    50   Input ~ 0
 12V
+Text Notes 7150 2250 0    50   ~ 0
+Vin 20-60V\nN 1:0.29\nVout 12V\nIpri = 0.32A\nIsec = 0.100A\nLleak = 2.3 uH
+$Comp
+L Transformer:TRANSF6 TR?
+U 1 1 5D5FE386
+P 6600 3500
+F 0 "TR?" H 6600 3982 50  0000 C CNN
+F 1 "7491199212" H 6600 3891 50  0000 C CNN
+F 2 "" H 6600 3500 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/7491199212.pdf" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 6300 3400
+Wire Wire Line
+	6100 3400 6100 3600
+Wire Wire Line
+	6100 3200 6400 3200
+Wire Wire Line
+	6400 3700 6400 4050
+Wire Wire Line
+	6400 4050 6800 4050
+Wire Wire Line
+	6400 3500 6300 3500
+Wire Wire Line
+	6300 3900 6850 3900
+Wire Wire Line
+	7000 3900 7000 3650
+Wire Wire Line
+	7000 3650 7100 3650
+Wire Wire Line
+	6300 3500 6300 3900
+Wire Wire Line
+	6950 3200 6800 3200
+Wire Wire Line
+	7450 2950 7450 3400
+Wire Wire Line
+	6950 2600 6950 3200
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D6128A3
+P 6300 2700
+F 0 "D?" V 6254 2779 50  0000 L CNN
+F 1 "MBR2H200SF" V 6345 2779 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6300 2700 50  0001 C CNN
+F 3 "~" H 6300 2700 50  0001 C CNN
+	1    6300 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 2850 6300 3400
+Connection ~ 6300 3400
+Wire Wire Line
+	6300 3400 6100 3400
+Wire Wire Line
+	6300 2550 6300 2400
+Wire Wire Line
+	6300 2400 6700 2400
+Wire Wire Line
+	6700 2400 6700 2300
+Connection ~ 6300 2400
+Wire Wire Line
+	6300 2400 6300 2300
+Wire Wire Line
+	6700 2000 6700 1850
+Wire Wire Line
+	6700 1850 6300 1850
+Connection ~ 6100 1850
+Wire Wire Line
+	6300 2100 6300 1850
+Connection ~ 6300 1850
+Wire Wire Line
+	6300 1850 6100 1850
+Text Notes 5800 950  0    50   ~ 0
+Rclamp = (4 * Vr^2) / (Lleak * Ip ^2 * fsw)\n= 4 * 60^2 / (2.3e-6 * 0.32^2 * 200e3)\n= 14.4 / (2.3e-6 * 0.32^2 * 200)\n= 305k
+Text Notes 8300 2350 0    50   ~ 0
+Coutmin = (Ioutmax * 10) / (fsw * Vout_ripple)\n= (0,05A * 10) / (200e3 * 0,1)\n= 25uF
+Text Notes 5800 1400 0    50   ~ 0
+Csnub = (2 * Lleak * Ip ^2 * n ^2 ) / (Vout ^2)\n= (2 * 2.3e-6 * 0.32^2 * 0.33^2) / (12^2)\n= 356pF
+$Comp
+L Device:C_Small C?
+U 1 1 5D66214F
+P 8450 2750
+AR Path="/5D66214F" Ref="C?"  Part="1" 
+AR Path="/5DAB7E1F/5D66214F" Ref="C?"  Part="1" 
+F 0 "C?" H 8542 2796 50  0000 L CNN
+F 1 "10u" H 8542 2705 50  0000 L CNN
+F 2 "" H 8450 2750 50  0001 C CNN
+F 3 "~" H 8450 2750 50  0001 C CNN
+	1    8450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2600 8100 2600
+Wire Wire Line
+	7750 2950 8100 2950
+$Comp
+L Device:C_Small C?
+U 1 1 5D66C1A6
+P 8100 2750
+AR Path="/5D66C1A6" Ref="C?"  Part="1" 
+AR Path="/5DAB7E1F/5D66C1A6" Ref="C?"  Part="1" 
+F 0 "C?" H 8192 2796 50  0000 L CNN
+F 1 "10u" H 8192 2705 50  0000 L CNN
+F 2 "" H 8100 2750 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2850 8100 2950
+Connection ~ 8100 2950
+Wire Wire Line
+	8100 2950 8450 2950
+Wire Wire Line
+	8450 2850 8450 2950
+Connection ~ 8450 2950
+Wire Wire Line
+	8450 2950 8550 2950
+Wire Wire Line
+	8450 2650 8450 2600
+Connection ~ 8450 2600
+Wire Wire Line
+	8450 2600 8600 2600
+Wire Wire Line
+	8100 2650 8100 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	8100 2600 8450 2600
+Wire Wire Line
+	6800 3400 7450 3400
+Wire Wire Line
+	6800 3700 6800 4050
+Connection ~ 6800 4050
+Wire Wire Line
+	6800 4050 7100 4050
+Wire Wire Line
+	6800 3500 6850 3500
+Wire Wire Line
+	6850 3500 6850 3900
+Connection ~ 6850 3900
+Wire Wire Line
+	6850 3900 7000 3900
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D68DF5E
+P 7250 3650
+AR Path="/5D68DF5E" Ref="D?"  Part="1" 
+AR Path="/5DAB7E1F/5D68DF5E" Ref="D?"  Part="1" 
+F 0 "D?" H 7250 3434 50  0000 C CNN
+F 1 "BAT54T1G" H 7250 3525 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7250 3650 50  0001 C CNN
+F 3 "~" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	-1   0    0    1   
+$EndComp
+Text HLabel 4200 2950 0    50   Input ~ 0
+V_SUPPLY
+Wire Wire Line
+	4200 2950 4300 2950
+Wire Wire Line
+	4300 2950 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4300 3300 4550 3300
 $EndSCHEMATC

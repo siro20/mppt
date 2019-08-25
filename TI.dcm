@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TPS79801
+D TPS798xx-Q150 mA, 3 V to 50 V, Micropower,Low-DropoutLinearRegulator
+F http://www.ti.com/lit/ds/symlink/tps798-q1.pdf
+$ENDCMP
+#
 #End Doc Library
