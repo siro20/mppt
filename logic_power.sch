@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -96,8 +96,6 @@ Wire Wire Line
 	2900 3300 2350 3300
 Wire Wire Line
 	2350 3300 2350 3950
-Wire Wire Line
-	3650 3300 4300 3300
 Wire Wire Line
 	4550 3300 5000 3300
 Connection ~ 4550 3300
@@ -353,14 +351,8 @@ Wire Wire Line
 Wire Wire Line
 	7750 2650 7750 2600
 Connection ~ 7750 2600
-Text HLabel 4600 1650 0    50   Input ~ 0
+Text HLabel 4750 1400 0    50   Input ~ 0
 V_IN
-Wire Wire Line
-	4600 1650 4800 1650
-Wire Wire Line
-	4800 1650 4800 1850
-Wire Wire Line
-	4800 1850 5850 1850
 $Comp
 L Device:R R?
 U 1 1 5DB1721E
@@ -642,7 +634,7 @@ F 3 "~" H 8450 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 2600 8100 2600
+	7750 2600 7950 2600
 Wire Wire Line
 	7750 2950 8100 2950
 $Comp
@@ -705,13 +697,161 @@ F 3 "~" H 7250 3650 50  0001 C CNN
 	1    7250 3650
 	-1   0    0    1   
 $EndComp
-Text HLabel 4200 2950 0    50   Input ~ 0
+Text HLabel 3350 2200 0    50   Input ~ 0
 V_SUPPLY
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DA4B3AA
+P 4550 3150
+F 0 "TP?" H 4608 3268 50  0000 L CNN
+F 1 "TestPoint" H 4608 3177 50  0000 L CNN
+F 2 "" H 4750 3150 50  0001 C CNN
+F 3 "~" H 4750 3150 50  0001 C CNN
+	1    4550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DA4BF3C
+P 7950 3500
+F 0 "TP?" H 8008 3618 50  0000 L CNN
+F 1 "TestPoint" H 8008 3527 50  0000 L CNN
+F 2 "" H 8150 3500 50  0001 C CNN
+F 3 "~" H 8150 3500 50  0001 C CNN
+	1    7950 3500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4200 2950 4300 2950
+	7950 3500 7950 3650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DA503D9
+P 7950 2500
+F 0 "TP?" H 8008 2618 50  0000 L CNN
+F 1 "TestPoint" H 8008 2527 50  0000 L CNN
+F 2 "" H 8150 2500 50  0001 C CNN
+F 3 "~" H 8150 2500 50  0001 C CNN
+	1    7950 2500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4300 2950 4300 3300
+	7950 2500 7950 2600
+Connection ~ 7950 2600
+Wire Wire Line
+	7950 2600 8100 2600
+Wire Wire Line
+	4550 3150 4550 3300
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5DA5817D
+P 3700 2200
+F 0 "JP?" H 3700 2404 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 3700 2313 50  0000 C CNN
+F 2 "" H 3700 2200 50  0001 C CNN
+F 3 "~" H 3700 2200 50  0001 C CNN
+	1    3700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3300 4300 3300
+Wire Wire Line
+	3350 2200 3450 2200
+Wire Wire Line
+	3700 2350 3700 2800
+Wire Wire Line
+	3700 2800 4300 2800
+Wire Wire Line
+	4300 2800 4300 3300
 Connection ~ 4300 3300
 Wire Wire Line
 	4300 3300 4550 3300
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DA67559
+P 3050 1700
+F 0 "J?" H 2968 1375 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2968 1466 50  0000 C CNN
+F 2 "" H 3050 1700 50  0001 C CNN
+F 3 "~" H 3050 1700 50  0001 C CNN
+	1    3050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA681B7
+P 3300 1850
+AR Path="/5DA681B7" Ref="#PWR?"  Part="1" 
+AR Path="/5DAB7E1F/5DA681B7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 1600 50  0001 C CNN
+F 1 "GND" H 3305 1677 50  0000 C CNN
+F 2 "" H 3300 1850 50  0001 C CNN
+F 3 "" H 3300 1850 50  0001 C CNN
+	1    3300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1700 3300 1700
+Wire Wire Line
+	3300 1700 3300 1850
+Wire Wire Line
+	3250 1600 4150 1600
+Wire Wire Line
+	4150 1600 4150 2200
+Wire Wire Line
+	4150 2200 3950 2200
+Text Notes 2350 1650 0    50   ~ 0
+for testing only
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5D8A6170
+P 5100 1400
+F 0 "JP?" H 5100 1604 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 5100 1513 50  0000 C CNN
+F 2 "" H 5100 1400 50  0001 C CNN
+F 3 "~" H 5100 1400 50  0001 C CNN
+	1    5100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1400 4850 1400
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D8A6177
+P 4450 900
+F 0 "J?" H 4368 575 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4368 666 50  0000 C CNN
+F 2 "" H 4450 900 50  0001 C CNN
+F 3 "~" H 4450 900 50  0001 C CNN
+	1    4450 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8A617D
+P 4700 1050
+AR Path="/5D8A617D" Ref="#PWR?"  Part="1" 
+AR Path="/5DAB7E1F/5D8A617D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4700 800 50  0001 C CNN
+F 1 "GND" H 4705 877 50  0000 C CNN
+F 2 "" H 4700 1050 50  0001 C CNN
+F 3 "" H 4700 1050 50  0001 C CNN
+	1    4700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 900  4700 900 
+Wire Wire Line
+	4700 900  4700 1050
+Wire Wire Line
+	4650 800  5550 800 
+Wire Wire Line
+	5550 800  5550 1400
+Wire Wire Line
+	5550 1400 5350 1400
+Text Notes 3750 850  0    50   ~ 0
+for testing only
+Wire Wire Line
+	5100 1550 5100 1850
+Wire Wire Line
+	5100 1850 5850 1850
 $EndSCHEMATC

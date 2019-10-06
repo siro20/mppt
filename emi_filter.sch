@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+LIBS:mppt_power-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L_Small L?
+U 1 1 5D89311D
+P 1550 3000
+AR Path="/5D88F4F7/5D89311D" Ref="L?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D89311D" Ref="L?"  Part="1" 
+F 0 "L?" V 1369 3000 50  0000 C CNN
+F 1 "22u" V 1460 3000 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L31.8mm_W15.9mm_P13.50mm_Bourns_5700" H 1550 3000 50  0001 C CNN
+F 3 "~" H 1550 3000 50  0001 C CNN
+	1    1550 3000
+	0    1    1    0   
+$EndComp
+Text Notes 1400 2000 0    100  ~ 20
+EMI Filter - Current Sense Low pass
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D893127
+P 3500 3000
+AR Path="/5D88F4F7/5D893127" Ref="TP?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D893127" Ref="TP?"  Part="1" 
+F 0 "TP?" H 3558 3118 50  0000 L CNN
+F 1 "TestPoint" H 3558 3027 50  0000 L CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3000 4400 3000
+Wire Wire Line
+	1200 3000 1450 3000
+$Comp
+L Device:C_Small C?
+U 1 1 5D893135
+P 1950 3200
+AR Path="/5D88F4F7/5D893135" Ref="C?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D893135" Ref="C?"  Part="1" 
+F 0 "C?" H 2042 3246 50  0000 L CNN
+F 1 "10u" H 2042 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L26.5mm_W8.5mm_P22.50mm_MKS4" H 1950 3200 50  0001 C CNN
+F 3 "~" H 1950 3200 50  0001 C CNN
+F 4 "MKS4D051006D00KJ00" H 1950 3200 50  0001 L CNN "Partnumber"
+	1    1950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D893141
+P 2300 3450
+AR Path="/5D88F4F7/5D893141" Ref="#PWR?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D893141" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 3200 50  0001 C CNN
+F 1 "GND" H 2305 3277 50  0000 C CNN
+F 2 "" H 2300 3450 50  0001 C CNN
+F 3 "" H 2300 3450 50  0001 C CNN
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3400 1950 3400
+Wire Wire Line
+	1950 3400 1950 3300
+Wire Wire Line
+	2300 3450 2300 3400
+Wire Wire Line
+	1950 3100 1950 3000
+Connection ~ 3500 3000
+Wire Wire Line
+	2300 3400 2400 3400
+Connection ~ 2300 3400
+$Comp
+L Device:C_Small C?
+U 1 1 5D89991E
+P 2400 3200
+AR Path="/5D88F4F7/5D89991E" Ref="C?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D89991E" Ref="C?"  Part="1" 
+F 0 "C?" H 2492 3246 50  0000 L CNN
+F 1 "10u" H 2492 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L26.5mm_W8.5mm_P22.50mm_MKS4" H 2400 3200 50  0001 C CNN
+F 3 "~" H 2400 3200 50  0001 C CNN
+F 4 "MKS4D051006D00KJ00" H 2400 3200 50  0001 L CNN "Partnumber"
+	1    2400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D899AB9
+P 2800 3200
+AR Path="/5D88F4F7/5D899AB9" Ref="C?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D899AB9" Ref="C?"  Part="1" 
+F 0 "C?" H 2892 3246 50  0000 L CNN
+F 1 "10u" H 2892 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L26.5mm_W8.5mm_P22.50mm_MKS4" H 2800 3200 50  0001 C CNN
+F 3 "~" H 2800 3200 50  0001 C CNN
+F 4 "MKS4D051006D00KJ00" H 2800 3200 50  0001 L CNN "Partnumber"
+	1    2800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D899CE6
+P 3250 3200
+AR Path="/5D88F4F7/5D899CE6" Ref="C?"  Part="1" 
+AR Path="/5D8E8EEF/5D8EB2BE/5D899CE6" Ref="C?"  Part="1" 
+F 0 "C?" H 3342 3246 50  0000 L CNN
+F 1 "10u" H 3342 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L26.5mm_W8.5mm_P22.50mm_MKS4" H 3250 3200 50  0001 C CNN
+F 3 "~" H 3250 3200 50  0001 C CNN
+F 4 "MKS4D051006D00KJ00" H 3250 3200 50  0001 L CNN "Partnumber"
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3300 3250 3400
+Wire Wire Line
+	2800 3300 2800 3400
+Connection ~ 2800 3400
+Wire Wire Line
+	2800 3400 3250 3400
+Wire Wire Line
+	2400 3300 2400 3400
+Connection ~ 2400 3400
+Wire Wire Line
+	2400 3400 2800 3400
+Wire Wire Line
+	2400 3100 2400 3000
+Connection ~ 2400 3000
+Wire Wire Line
+	2400 3000 2800 3000
+Wire Wire Line
+	2800 3100 2800 3000
+Connection ~ 2800 3000
+Wire Wire Line
+	2800 3000 3250 3000
+Wire Wire Line
+	3250 3100 3250 3000
+Connection ~ 3250 3000
+Wire Wire Line
+	3250 3000 3500 3000
+Wire Wire Line
+	1650 3000 1950 3000
+Connection ~ 1950 3000
+Wire Wire Line
+	1950 3000 2400 3000
+Text HLabel 4400 3000 2    50   Input ~ 0
+OUT
+Text HLabel 1200 3000 0    50   Input ~ 0
+IN
+$EndSCHEMATC
